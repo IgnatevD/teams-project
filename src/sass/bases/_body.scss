@@ -7,6 +7,25 @@ body {
   font-style: normal;
   line-height: 1.25;
   color: #2e2520;
+
+  background-image: url(../images/bg-mob.svg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg-tabl.svg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bg-dec.svg);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
 
 h1,
@@ -29,6 +48,11 @@ img {
 }
 
 .conteiner {
+  width: 100%;
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+
   @media screen and (min-width: 320px) {
     width: 100%;
     max-width: 320px;
