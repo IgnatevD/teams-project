@@ -1,30 +1,32 @@
 <section class="section registration"> 
     <div class="container registration__container">
         <h2 class="title registration__title">Registration</h2>
-        <pre class="registration__text">
+        <p class="registration__text">
             May 23, 11:00
             New York
 
             $ 699
-        </pre>
-        <p class="registration__form-title">
-            Apply your personal info for registration
         </p>
-        <form class="registration-form">
-            <label class="registration-form__field">
-                <span class="registration-form__label">Your name</span>
-                <input class="registration-form__input" type="text" name="user-name" autofocus required minlength="2">
-            </label>
-
-            <label class="registration-form__field">
-                <span class="registration-form__label">Phone number</span>
-                <input class="registration-form__input" type="tel" name="tel" required>
-            </label>
+        <div class="registration__form-container">
+            <p class="registration__form-title">
+                Apply your personal info for registration
+            </p>
+            <form class="registration-form">
+                <label class="registration-form__field">
+                    <span class="registration-form__label">Your name</span>
+                    <input class="registration-form__input" type="text" name="user-name" placeholder="Your name" autofocus required minlength="2">
+                </label>
             
-            <label class="registration-form__field">
-                <span class="registration-form__label">Email</span>
-                <input class="registration-form__input" type="email" name="email" required>
-            </label>
-        </form>
+                <label class="registration-form__field">
+                    <span class="registration-form__label">Phone number</span>
+                    <input class="registration-form__input" type="tel" name="tel" placeholder="Phone number" required>
+                </label>
+            
+                <label class="registration-form__field">
+                    <span class="registration-form__label">Email</span>
+                    <input class="registration-form__input" type="email" name="email"  placeholder="Email" required>
+                </label>
+            </form>
+        </div>
     </div>
 </section>
