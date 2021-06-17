@@ -1,7 +1,57 @@
 body {
-  background-image: url(../images/bg.jpg), url(../images/bifooter.jpg);
-  height: 6000px;
-  background-size: 100%, 100%;
-  background-position: top, bottom;
-  background-repeat: no-repeat, no-repeat;
+  background: #e5e5e5;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  font-style: normal;
+  line-height: 1.25;
+  color: #2e2520;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.conteiner {
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 768px;
+    padding-left: 67px;
+    padding-right: 67px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 229px;
+    padding-right: 229px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
