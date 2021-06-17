@@ -35,3 +35,37 @@
   width: 15px;
   height: 15px;
 }
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    text-align: left;
+  }
+  .social {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__titel {
+    max-width: 490px;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  .hero__text {
+    margin-bottom: 26px;
+  }
+
+  .hero__button {
+    margin-bottom: 65px;
+  }
+
+  .social {
+    max-width: 78px;
+    height: 19px;
+  }
+  .social__icon {
+    width: 19px;
+  }
+}

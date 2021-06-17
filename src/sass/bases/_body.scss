@@ -8,22 +8,24 @@ body {
   line-height: 1.25;
   color: #2e2520;
 
-  background-image: url(../images/pic-mob.png), url(../images/bg-mob.svg),
-    url(../images/bg-bot-mob.svg);
-  background-size: auto, 100%, auto;
-  background-position: left top, top, 0 1500px;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-image: url(../images/background/pic-mob.png), url(../images/background/bottom-mob.png),
+    url(../images/background/bg-mob.svg), url(../images/background/bg-bot-mob.svg);
+
+  background-size: auto, auto, 100%, 100%;
+  background-position: left top, bottom right, top, bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/pic-mob.png), url(../images/bg-tabl.svg),
-      url(../images/bg-bot-mob.svg);
+    background-image: url(../images/background/pic-mob.png), url(../images/background/bg-tabl.svg),
+      url(../images/background/bg-bot-mob.svg);
+
     background-size: auto, 100%, 100%;
     background-position: left top, top, bottom;
     background-repeat: no-repeat, no-repeat, no-repeat;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/bg-dec.svg);
+    background-image: url(../images/background/bg-dec.svg);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
