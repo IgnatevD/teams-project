@@ -18,18 +18,20 @@
   margin-bottom: 37px;
 }
 
-.social {
-  display: flex;
-  justify-content: space-between;
-  width: 61px;
-  height: 15px;
-}
-
 .hero__button {
   margin-bottom: 47px;
 }
 
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 61px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .social__icon {
-  width: 20px;
+  width: 15px;
   height: 15px;
 }
