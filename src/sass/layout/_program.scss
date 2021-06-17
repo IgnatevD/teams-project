@@ -67,8 +67,8 @@
 }
 
 .program__icon-hat {
-  width: 18px;
-  height: 19px;
+  width: 19px;
+  height: 18px;
 }
 
 .program__icon-people {
@@ -86,6 +86,70 @@
   height: 17px;
 }
 
-// .program_container {
-//  display: flex;
-// }
+@media screen and (min-width: 768px) {
+  .program_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__right-part,
+  .program__left-part {
+    flex-basis: calc((100% - 38px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .program__right-part,
+  .program__left-part {
+    flex-basis: calc((100% - 40px) / 2);
+  }
+
+  .program__title {
+    font-size: 36px;
+  }
+
+  .program__left-part {
+    font-size: 18px;
+  }
+
+  .program__information {
+    position: relative;
+    padding-top: 63px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 180px;
+  }
+
+  .program__inform-title {
+    font-style: 24px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+
+  .program__inform-desc {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 17px;
+  }
+
+  .program__icon-hat {
+    width: 25px;
+    height: 22px;
+  }
+
+  .program__icon-people {
+    width: 26px;
+    height: 23px;
+  }
+
+  .program__icon-clock {
+    width: 25px;
+    height: 25px;
+  }
+
+  .program__icon-chat {
+    width: 31px;
+    height: 21px;
+  }
+}
