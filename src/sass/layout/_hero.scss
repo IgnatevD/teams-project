@@ -1,0 +1,35 @@
+.hero__container {
+  text-align: center;
+}
+
+.hero__titel {
+  display: inline-block;
+  max-width: 224px;
+  font-family: Caveat Brush;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 3px;
+}
+
+.hero__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 37px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 61px;
+  height: 15px;
+}
+
+.hero__button {
+  margin-bottom: 47px;
+}
+
+.social__icon {
+  width: 20px;
+  height: 15px;
+}

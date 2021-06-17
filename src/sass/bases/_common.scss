@@ -1,4 +1,56 @@
-body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.button {
+  width: 145px;
+  height: 40px;
+  cursor: pointer;
+  background: #ab816c;
+  border-radius: 25px;
+  border: none;
+
+  font-family: Caveat Brush;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.title {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2.7;
+  text-align: center;
+  color: #2e2520;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
 }
