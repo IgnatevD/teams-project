@@ -8,10 +8,10 @@ body {
   line-height: 1.25;
   color: #2e2520;
 
-  background-image: url(../images/bg-mob.svg);
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
+  background-image: url(../images/pic-mob.png), url(../images/bg-mob.svg);
+  background-size: auto, 100%;
+  background-position: left top, top;
+  background-repeat: no-repeat, no-repeat;
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/bg-tabl.svg);
@@ -41,10 +41,14 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .conteiner {
