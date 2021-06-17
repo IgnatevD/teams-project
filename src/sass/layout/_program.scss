@@ -1,5 +1,5 @@
 .program__desc {
-  margin-bottom: 10;
+  margin-bottom: 10px;
 }
 
 .program__item {
@@ -10,39 +10,54 @@
   margin-bottom: 59px;
 }
 
+.program__right-part {
+  display: flex;
+}
+
 .program__advertisement {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-end;
   margin: 0 auto;
 }
 
 .program__information {
+  padding-top: 48px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
+  // justify-content: space-between;
+  flex-direction: column;
   width: 142px;
   height: 142px;
   border-radius: 50%;
   background-color: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+  &:nth-child(odd) {
+    margin-bottom: 30px;
+  }
 }
 
 .program__inform-title {
   font-family: 'Caveat Brush';
   font-size: 18px;
   line-height: 23px;
+  text-align: center;
+  padding-bottom: 12px;
 }
 
 .program__inform-desc {
   font-size: 14px;
   line-height: 17px;
+  text-align: center;
+  padding-bottom: 12px;
 }
 
-.program__right-part {
-  display: flex;
+.program__icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  fill: #674d40;
 }
 
 .program__icon-hat {
