@@ -1,0 +1,35 @@
+.program__information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+  background-color: teal;
+
+  font-family: 'Caveat Brush';
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.program__icon-hat {
+  width: 18px;
+  height: 19px;
+}
+
+.program__icon-people {
+  width: 20px;
+  height: 18px;
+}
+
+.program__icon-clock {
+  width: 20px;
+  height: 20px;
+}
+
+.program__icon-chat {
+  width: 25px;
+  height: 17px;
+}
