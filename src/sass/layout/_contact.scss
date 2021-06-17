@@ -28,7 +28,12 @@
   margin-top: 2px;
   width: 265px;
   border-bottom: 1px solid #ab816c;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .contact-button {
   background: #ab816c;
   border-radius: 25px;
@@ -40,8 +45,19 @@
   font-size: 18px;
   text-align: center;
   color: #ffffff;
-  margin-left: 88px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   cursor: pointer;
   border: none;
+}
+
+.contact__list {
+  padding: 0;
+}
+.modal-contact-input {
+  outline: none;
+  border: none;
+  background: transparent;
 }

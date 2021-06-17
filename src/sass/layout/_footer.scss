@@ -1,0 +1,36 @@
+.footer-icon {
+  width: 18.95px;
+  height: 15px;
+}
+.footer-list__social {
+  display: flex;
+  justify-content: center;
+  padding-top: 47px;
+}
+.footer-list__social_item_link {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34px;
+}
+.footer-icon-tel {
+  width: 13px;
+  height: 13px;
+}
+.footer-icon-geolocation {
+  width: 14px;
+  height: 14.44px;
+}
+.footer-contact__item_link {
+  text-decoration: none;
+  font-style: normal;
+  color: #2e2520;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
