@@ -1,9 +1,17 @@
-<section class="contact">
+<section class="contact container">
     <h2 class="contact-title">Contact</h2>
     <p class="contact-text">We will answer any question!</p>
-    <ul class="contact__list">
-        <li class="contact__list_item list ">Email</li>
-        <li class="contact__list_item list ">Type your question</li>
-    </ul>
+    <form class="contact__list">
+        <label class="contact__list_label">
+            <span class="contact__list_item list ">
+            <input type="email" name="contact-mail" class="modal-contact-input" placeholder="Email">
+                </span>
+        </label>
+        <label class="contact__list_label">
+        <span class="contact__list_item list ">
+            <input type="text" name="text" class="modal-contact-input" placeholder="Type your question">
+            </span>
+        </label>
+    
     <button class="contact-button button">Send</button>
-</section>
+</form>
