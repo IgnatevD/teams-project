@@ -1,0 +1,22 @@
+.about-us {
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+
+  &__title {
+    font-family: Caveat Brush;
+    font-size: 24px;
+    line-height: 2.7;
+    color: #2e2520;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.8;
+    }
+  }
+}
