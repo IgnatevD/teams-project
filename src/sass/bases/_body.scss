@@ -8,16 +8,18 @@ body {
   line-height: 1.25;
   color: #2e2520;
 
-  background-image: url(../images/pic-mob.png), url(../images/bg-mob.svg);
-  background-size: auto, 100%;
-  background-position: left top, top;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../images/pic-mob.png), url(../images/bg-mob.svg),
+    url(../images/bg-bot-mob.svg);
+  background-size: auto, 100%, 100%;
+  background-position: left top, top, bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/bg-tabl.svg);
-    background-size: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-image: url(../images/pic-mob.png), url(../images/bg-tabl.svg),
+      url(../images/bg-bot-mob.svg);
+    background-size: auto, 100%, 100%;
+    background-position: left top, top, bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
   }
 
   @media screen and (min-width: 1280px) {
@@ -51,7 +53,7 @@ img {
   padding: 0px;
 }
 
-.conteiner {
+.container {
   width: 100%;
   max-width: 320px;
   padding-left: 15px;
