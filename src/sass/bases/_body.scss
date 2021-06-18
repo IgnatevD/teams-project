@@ -16,18 +16,22 @@ body {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/background/pic-mob.png), url(../images/background/bg-tabl.svg),
-      url(../images/background/bg-bot-mob.svg);
+    background-image: url(../images/background/pic-tabl.png),
+      url(../images/background/bottom-tabl.png), url(../images/background/bg-tabl.svg),
+      url(../images/background/bg-bot-tabl.svg);
 
-    background-size: auto, 100%, 100%;
-    background-position: left top, top, 50% 85%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, 100%, 100%;
+    background-position: 60% 0, bottom right, top, 50% 85%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/background/bg-dec.svg);
-    background-size: 100%;
-    background-position: top;
-    background-repeat: no-repeat;
+    background-image: url(../images/background/pic-dec.png), url(../images/background/spoon-dec.png),
+      url(../images/background/bottom-dec.png), url(../images/background/bg-dec.svg),
+      url(../images/background/bg-bot-dec.svg);
+
+    background-size: auto, auto, auto, 100%, 100%;
+    background-position: right top, 0px 167px, bottom right, top, bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   }
 }
