@@ -39,6 +39,62 @@
   }
 }
 
+.program__information1 {
+  &::before {
+    content: '';
+    display: block;
+    width: 76px;
+    height: 84px;
+    background-image: url(../images/program/mob-program1.png);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.program__information2 {
+  &::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 77px;
+    background-image: url(../images/program/mob-program2.png);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.program__information3 {
+  &::before {
+    content: '';
+    display: block;
+    width: 67px;
+    height: 73px;
+    background-image: url(../images/program/mob-program3.png);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.program__information4 {
+  &::before {
+    content: '';
+    display: block;
+    width: 67px;
+    height: 73px;
+    background-image: url(../images/program/mob-program4.png);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
 .program__img {
   position: absolute;
   top: -30px;
