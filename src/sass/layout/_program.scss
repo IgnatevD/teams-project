@@ -158,6 +158,14 @@
   .program__left-part {
     flex-basis: calc((100% - 38px) / 2);
   }
+
+  .program__title {
+    text-align: left;
+  }
+
+  .program__advertisement {
+    padding-bottom: 58px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -191,8 +199,12 @@
     height: 180px;
 
     &:nth-child(odd) {
-      margin-bottom: 45px;
+      margin-bottom: 50px;
     }
+  }
+
+  .program__advertisement {
+    padding-top: 51px;
   }
 
   .program__inform-title {
