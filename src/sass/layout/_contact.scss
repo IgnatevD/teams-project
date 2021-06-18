@@ -1,36 +1,19 @@
 .contact-title {
-  font-family: Caveat Brush, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 2.7;
-  text-align: center;
-  color: #2e2520;
   padding-top: 27px;
   @media screen and(min-width:1280px) {
     font-size: 36px;
-    line-height: 1.8;
   }
 }
 .contact-text {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   line-height: 4.06;
   text-align: center;
-  color: #2e2520;
   @media screen and(min-width:1280px) {
     font-size: 18px;
     line-height: 3.61;
   }
 }
 .contact__list_item {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   margin-bottom: 37px;
-  font-size: 16px;
   line-height: 20px;
   color: rgba(171, 129, 108, 0.5);
   margin-top: 2px;
@@ -49,26 +32,11 @@
 }
 
 .contact-button {
-  background: #ab816c;
-  border-radius: 25px;
-  width: 145px;
-  height: 40px;
-  font-family: Caveat Brush;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  text-align: center;
-  color: #ffffff;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
-  border: none;
   margin-bottom: 47px;
   @media screen and(min-width:1280px) {
-    width: 158px;
-    height: 45px;
-    font-size: 24px;
     margin-bottom: 74px;
     @media screen and(min-width:768px) and(max-width:1279px) {
       margin-bottom: 50px;
