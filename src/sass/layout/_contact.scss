@@ -29,7 +29,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  margin-bottom: 27px;
+  margin-bottom: 37px;
   font-size: 16px;
   line-height: 20px;
   color: rgba(171, 129, 108, 0.5);
@@ -62,15 +62,16 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 37px;
   cursor: pointer;
   border: none;
+  margin-bottom: 47px;
   @media screen and(min-width:1280px) {
     width: 158px;
     height: 45px;
     font-size: 24px;
+    margin-bottom: 74px;
     @media screen and(min-width:768px) and(max-width:1279px) {
-      margin-top: 27px;
+      margin-bottom: 50px;
     }
   }
 }

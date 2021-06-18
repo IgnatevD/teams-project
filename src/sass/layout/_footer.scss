@@ -9,12 +9,12 @@
 .footer-list__social {
   display: flex;
   justify-content: center;
-  padding-top: 47px;
+  margin-bottom: 34px;
   @media screen and(min-width:1280px) {
-    padding-top: 74px;
+    margin-bottom: 35px;
   }
   @media screen and(min-width:768px) and(max-width:1279px) {
-    padding-top: 50px;
+    margin-bottom: 51px;
   }
 }
 .footer-list__social_item_link {
@@ -25,7 +25,6 @@
 .footer-contact {
   display: flex;
   justify-content: space-between;
-  padding-top: 34px;
 }
 .footer-icon-tel {
   width: 13px;
@@ -48,6 +47,6 @@
 .footer {
   padding-bottom: 19px;
   @media screen and(min-width:768px) {
-    padding-bottom: 21px;
+    margin-bottom: 21px;
   }
 }
