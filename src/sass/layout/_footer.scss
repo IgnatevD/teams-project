@@ -1,7 +1,7 @@
 .footer-icon {
   width: 18.95px;
   height: 15px;
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     width: 24px;
     height: 19px;
   }
@@ -10,10 +10,10 @@
   display: flex;
   justify-content: center;
   padding-top: 47px;
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     padding-top: 74px;
   }
-  @media screen and(min-width:768px) and(max-width:1199px) {
+  @media screen and(min-width:768px) and(max-width:1279px) {
     padding-top: 50px;
   }
 }
