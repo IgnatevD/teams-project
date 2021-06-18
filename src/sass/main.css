@@ -637,6 +637,10 @@ body {
   }
 }
 
+.registration__text-list {
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+}
+
 .registration__text {
   text-align: center;
   font-weight: 500;
@@ -663,6 +667,12 @@ body {
 @media screen and (min-width: 1280px) {
   .registration__text:nth-child(2) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .registration__text:last-child {
+    margin-bottom: 20px;
   }
 }
 

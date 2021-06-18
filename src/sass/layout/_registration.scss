@@ -20,6 +20,10 @@
     }
   }
 
+  &__text-list {
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  }
+
   &__text {
     text-align: center;
     font-weight: 500;
@@ -39,6 +43,12 @@
 
       @media screen and (min-width: 1280px) {
         margin-bottom: 30px;
+      }
+    }
+
+    &:last-child {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
       }
     }
   }
