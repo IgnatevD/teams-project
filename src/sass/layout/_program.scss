@@ -4,7 +4,18 @@
 
 .program__item {
   margin-bottom: 10px;
-  // position: relative;
+  position: relative;
+  margin-left: 20px;
+  &::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/program/donut.png);
+    position: absolute;
+    left: -22px;
+    top: 2px;
+  }
 }
 
 .program__invitation {
@@ -155,6 +166,18 @@
     flex-basis: calc((100% - 40px) / 2);
   }
 
+  .program__desc {
+    margin-bottom: 21px;
+  }
+
+  .program__item {
+    margin-bottom: 15px;
+  }
+
+  .program__invitation {
+    margin-bottom: 0;
+  }
+
   .program__left-part {
     font-size: 18px;
   }
@@ -166,10 +189,14 @@
     flex-direction: column;
     width: 180px;
     height: 180px;
+
+    &:nth-child(odd) {
+      margin-bottom: 45px;
+    }
   }
 
   .program__inform-title {
-    font-style: 24px;
+    font-size: 24px;
     line-height: 30px;
     margin-bottom: 16px;
   }
