@@ -15,7 +15,7 @@
     @media screen and (min-width: 768px) {
       margin-left: 24.35px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
       margin-left: 76px;
     }
   }
@@ -26,17 +26,19 @@
     line-height: 2.7;
     color: var(--text-headers-color);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 36px;
       line-height: 1.8;
     }
   }
 
   &__img {
-    display: block;
-
     @media screen and (max-width: 767px) {
       margin: auto;
     }
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
