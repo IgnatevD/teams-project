@@ -22,15 +22,15 @@
   margin-bottom: 59px;
 }
 
-// .program__right-part {
-//   display: flex;
-// }
+.program__right-part {
+  display: flex;
+}
 
 .program__advertisement {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   margin: 0 auto;
 }
 
@@ -45,8 +45,8 @@
   background-color: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
-  &:nth-child(even) {
-    transform: translateY(30px);
+  &:nth-child(odd) {
+    margin-bottom: 56px;
   }
 }
 
@@ -62,16 +62,15 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-  margin-bottom: 56px;
 }
 
 .program__information2 {
   &::before {
     content: '';
     display: block;
-    width: 67px;
-    height: 73px;
-    background-image: url(../images/program/mob-program3.png);
+    width: 70px;
+    height: 77px;
+    background-image: url(../images/program/mob-program2.png);
     position: absolute;
     top: 0;
     left: 50%;
@@ -83,9 +82,9 @@
   &::before {
     content: '';
     display: block;
-    width: 70px;
-    height: 77px;
-    background-image: url(../images/program/mob-program2.png);
+    width: 67px;
+    height: 73px;
+    background-image: url(../images/program/mob-program3.png);
     position: absolute;
     top: 0;
     left: 50%;
@@ -105,7 +104,6 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-  margin-bottom: 39px;
 }
 
 .program__inform-title {
@@ -166,7 +164,7 @@
   }
 
   .program__advertisement {
-    padding-top: 43px;
+    padding-bottom: 58px;
   }
 }
 
@@ -184,9 +182,9 @@
     margin-bottom: 15px;
   }
 
-  // .program__invitation {
-  //   margin-bottom: 0;
-  // }
+  .program__invitation {
+    margin-bottom: 0;
+  }
 
   .program__left-part {
     font-size: 18px;
@@ -200,13 +198,13 @@
     width: 180px;
     height: 180px;
 
-    &:nth-child(even) {
-      transform: translateY(30px);
+    &:nth-child(odd) {
+      margin-bottom: 50px;
     }
   }
 
   .program__advertisement {
-    padding-top: 53px;
+    padding-top: 51px;
   }
 
   .program__inform-title {
@@ -253,16 +251,15 @@
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
     }
-    margin-bottom: 61px;
   }
 
   .program__information2 {
     &::before {
       content: '';
       display: block;
-      width: 83px;
-      height: 92px;
-      background-image: url(../images/program/desk-program3.png);
+      width: 88px;
+      height: 97px;
+      background-image: url(../images/program/desk-program2.png);
       position: absolute;
       top: 0;
       left: 50%;
@@ -274,9 +271,9 @@
     &::before {
       content: '';
       display: block;
-      width: 88px;
-      height: 97px;
-      background-image: url(../images/program/desk-program2.png);
+      width: 83px;
+      height: 92px;
+      background-image: url(../images/program/desk-program3.png);
       position: absolute;
       top: 0;
       left: 50%;
