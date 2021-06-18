@@ -1,11 +1,21 @@
 .footer-icon {
   width: 18.95px;
   height: 15px;
+  @media screen and(min-width:1200px) {
+    width: 24px;
+    height: 19px;
+  }
 }
 .footer-list__social {
   display: flex;
   justify-content: center;
   padding-top: 47px;
+  @media screen and(min-width:1200px) {
+    padding-top: 74px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    padding-top: 50px;
+  }
 }
 .footer-list__social_item_link {
   text-decoration: none;
@@ -33,4 +43,11 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+}
+
+.footer {
+  padding-bottom: 19px;
+  @media screen and(min-width:768px) {
+    padding-bottom: 21px;
+  }
 }

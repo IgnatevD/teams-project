@@ -1,0 +1,42 @@
+.about-us {
+  &__container {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__text-container {
+    @media screen and (min-width: 768px) {
+      margin-left: 24.35px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: 76px;
+    }
+  }
+
+  &__title {
+    font-family: Caveat Brush;
+    font-size: 24px;
+    line-height: 2.7;
+    color: var(--text-headers-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.8;
+    }
+  }
+
+  &__img {
+    display: block;
+
+    @media screen and (max-width: 767px) {
+      margin: auto;
+    }
+  }
+}
