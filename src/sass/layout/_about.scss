@@ -14,9 +14,11 @@
   &__text-container {
     @media screen and (min-width: 768px) {
       margin-left: 24.35px;
+      width: 336px;
     }
     @media screen and (min-width: 1280px) {
       margin-left: 76px;
+      width: 392px;
     }
   }
 
@@ -35,6 +37,16 @@
   &__img {
     @media screen and (max-width: 767px) {
       margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 330px;
+      height: 352px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 512px;
+      height: 547px;
     }
   }
 
