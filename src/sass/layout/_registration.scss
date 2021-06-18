@@ -1,14 +1,27 @@
 .registration {
-  background-color: #fffff9;
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-  border-radius: 150px 0px 0px 150px;
-
+  &__mobile-container {
+    @media screen and (max-width: 767px) {
+      background-color: #fffff9;
+      box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+      border-radius: 150px 150px 0px 0px;
+    }
+  }
   &__container {
     display: flex;
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
     }
+
+    @media screen and (min-width: 768px) {
+      background: #fffff9;
+      box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+      border-radius: 150px;
+    }
+  }
+
+  &__text-list {
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
   }
 
   &__text {
@@ -17,8 +30,26 @@
     font-size: 18px;
     line-height: 1.2;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 25px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 34px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:last-child {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -37,7 +68,7 @@
     font-size: 16px;
     line-height: 1.25;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 18px;
       line-height: 1.2;
     }
