@@ -1,5 +1,6 @@
 .review_container {
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .review__circle {
@@ -36,7 +37,27 @@
   height: 24px;
 }
 .review__number {
-  text-align: center;
+  display: inline-block;
   color: #ab816c;
   font-size: 14px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 12px;
+    width: 35px;
+    height: 1px;
+    background-image: url('../images/review/line.svg');
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 12px;
+    width: 35px;
+    height: 1px;
+    background-image: url('../images/review/line.svg');
+  }
 }
