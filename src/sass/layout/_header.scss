@@ -1,41 +1,33 @@
 .header {
 
   &__mobile-menu {
-    
     position: relative;
     display: flex;
     justify-content: center;
+    margin-top: 7px;
+    margin-bottom: 33px;
   }
 
   @media screen and (min-width: 768px) {
     &__mobile-menu {
       justify-content: flex-start;
-    }
-  }
-
-  &__logo {
-    margin-top: 7px;
-    margin-bottom: 33px;
-    width: 96px;
-    height: 43px;
-  }
-  
-  @media screen and (min-width: 768px) {
-    &__logo {
       margin-top: 27px;
       margin-bottom: 10px;
     }
   }
 
+  &__logo {
+    width: 96px;
+    height: 43px;
+  }
+  
   @media screen and (min-width: 1280px) {
     &__logo {
     display: none;
     }
   }
 
-
   &__icon {
-    margin: 0;
     width: 96px;
     height: 43px;
   }
@@ -54,6 +46,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 
   @media screen and (min-width: 768px) {
@@ -111,6 +104,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
   }
 
   @media screen and (min-width: 768px) 
@@ -153,6 +147,10 @@
     line-height: 1.21;
     color: #2E2520;
   }
+  &__nav-link:focus,
+  &__nav-link:active {
+    color:#876655
+  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -174,6 +172,8 @@
     margin-top: 31px;
     
     &__logo {
+      width: 158px;
+      height: 71px;
       display: block;
       margin-right: 38px;
     }
@@ -197,29 +197,10 @@
       line-height: 1.22;
       color: #2E2520;
     }
-  }
-}
-.desk-nmenu {
-  display: flex;
-  
-  &__logo {
-    margin-top: 31px;
-    margin-bottom: 57px;
-  }
 
-  &__icon {
-    width: 158px;
-    height: 71px;
+    &__nav-link:focus,
+    &__nav-link:hover {
+    color:#876655
   }
-
-  &__nav-list {
-    display: flex;
-  }
-
-  &__nav-link {
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 1.22;
-    color: #2E2520;
   }
 }
