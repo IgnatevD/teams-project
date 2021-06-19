@@ -1,4 +1,5 @@
 .review_container {
+  position: relative;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -80,8 +81,24 @@
       width: 158px;
       height: 158px;
     }
-    & .review__box {
-      display: block;
-    }
+  }
+
+  .review__box {
+    display: block;
+    width: 136px;
+    height: 189px;
+  }
+
+  .review__box.left {
+    position: absolute;
+    top: 0;
+    left: 96px;
+  }
+
+  .review__box.right {
+    position: absolute;
+
+    top: 0;
+    right: 96px;
   }
 }
