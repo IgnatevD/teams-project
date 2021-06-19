@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.review__title {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
 .review__circle {
   display: inline-block;
   width: 110px;
@@ -13,11 +18,15 @@
 }
 .review__box {
   display: none;
+  width: 136px;
+  height: 189px;
 }
 
 .review__box.current {
   display: block;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
 }
 
@@ -30,6 +39,8 @@
 .review__text {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .review__stars {
@@ -71,34 +82,84 @@
 }
 
 @media screen and (min-width: 768px) {
-  .review__box.current {
-    & .review__circle {
-      width: 158px;
-      height: 158px;
-      background-size: auto;
-    }
-    & .review__img {
-      width: 158px;
-      height: 158px;
-    }
+  .review_container {
+    max-width: 626px;
+    padding: 0px;
   }
 
-  .review__box {
-    display: block;
-    width: 136px;
-    height: 189px;
+  .review__box.current {
+    width: 186px;
+    height: 250px;
+
+    & .review__circle {
+      width: 186px;
+      height: 186px;
+    }
+
+    & .review__img {
+      width: 186px;
+      height: 186px;
+    }
   }
 
   .review__box.left {
+    display: block;
     position: absolute;
-    top: 0;
-    left: 96px;
+
+    top: 40px;
+    left: 49px;
   }
 
   .review__box.right {
+    display: block;
     position: absolute;
 
-    top: 0;
-    right: 96px;
+    top: 40px;
+    right: 49px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .review__title {
+    margin-bottom: 24px;
+  }
+
+  .review__text {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .review__box.left {
+    top: 103px;
+    left: 0px;
+
+    & .review__circle {
+      width: 136px;
+      height: 136px;
+    }
+
+    & .review__img {
+      width: 136px;
+      height: 136px;
+    }
+  }
+
+  .review__box.right {
+    top: 103px;
+    right: 0px;
+
+    & .review__circle {
+      width: 136px;
+      height: 136px;
+    }
+
+    & .review__img {
+      width: 136px;
+      height: 136px;
+    }
+  }
+
+  .review__number {
+    font-size: 16px;
   }
 }
