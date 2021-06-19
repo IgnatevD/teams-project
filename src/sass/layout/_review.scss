@@ -10,8 +10,12 @@
   border-radius: 50%;
   overflow: hidden;
 }
-
 .review__box {
+  display: none;
+}
+
+.review__box.current {
+  display: block;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -21,10 +25,12 @@
   font-weight: 500;
   font-size: 14px;
 }
+
 .review__text {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .review__stars {
   display: flex;
   justify-content: space-between;
@@ -64,7 +70,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .review__item.current {
+  .review__box.current {
     & .review__circle {
       width: 158px;
       height: 158px;
@@ -73,6 +79,9 @@
     & .review__img {
       width: 158px;
       height: 158px;
+    }
+    & .review__box {
+      display: block;
     }
   }
 }
