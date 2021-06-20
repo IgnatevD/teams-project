@@ -124,6 +124,10 @@ ul {
   }
 }
 
+hr {
+  border: transparent;
+}
+
 body {
   background: #ffff;
   font-family: Montserrat, sans-serif;
@@ -468,6 +472,16 @@ body {
 
 @media screen and (min-width: 1280px) {
   .about-us__text-container {
+    display: none;
+  }
+}
+
+.about-us__text-container-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__text-container-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -837,12 +851,20 @@ body {
     background-image: url("../images/registration/donut.png"), url("../images/registration/confetti-tablet.png");
     background-repeat: no-repeat;
     background-size: 196px 201px, 191px 345px;
+    -webkit-transform: rotate(69.49deg), rotate(-47.68deg);
+            transform: rotate(69.49deg), rotate(-47.68deg);
+    background-position: 10% 26%, 90% 100%;
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .registration {
     background-image: url("../images/registration/donut@2x.png"), url("../images/registration/confetti-tablet@2x.png");
+    background-repeat: no-repeat;
+    background-size: 196px 201px, 191px 345px;
+    -webkit-transform: rotate(69.49deg), rotate(-47.68deg);
+            transform: rotate(69.49deg), rotate(-47.68deg);
+    background-position: 10% 26%, 90% 100%;
   }
 }
 
@@ -853,13 +875,18 @@ body {
     background-size: 196px 201px, 301px 544px;
     -webkit-transform: rotate(69.49deg), rotate(-47.68deg);
             transform: rotate(69.49deg), rotate(-47.68deg);
-    background-position: 19% 26%;
+    background-position: 19% 26%, 79% 100%;
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1280px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), (min-resolution: 192dpi) and (min-width: 1280px), (min-resolution: 2dppx) and (min-width: 1280px) {
   .registration {
     background-image: url("../images/registration/donut@2x.png"), url("../images/registration/confetti@2x.png");
+    background-repeat: no-repeat;
+    background-size: 196px 201px, 301px 544px;
+    -webkit-transform: rotate(69.49deg), rotate(-47.68deg);
+            transform: rotate(69.49deg), rotate(-47.68deg);
+    background-position: 19% 26%, 79% 100%;
   }
 }
 
