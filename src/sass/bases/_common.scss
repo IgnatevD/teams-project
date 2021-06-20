@@ -32,21 +32,21 @@ ul {
   height: 40px;
   border: none;
   cursor: pointer;
-  background: #ab816c;
+  background: var(--button-stars-color);
   border-radius: 25px;
 
   font-family: Caveat Brush;
   font-size: 18px;
   text-align: center;
-  color: #ffffff;
+  color: var(--primary-white-color);
 
   &:hover,
   &:focus {
-    background-color: #876655;
+    background-color: var(--button-hover-color);
   }
 
   &:active {
-    background-color: #674d40;
+    background-color: var(--button-clic-color);
   }
 
   @media screen and (min-width: 1280px) {
@@ -63,7 +63,7 @@ ul {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  color: #ab816c;
+  color: var(--button-stars-color);
   background-color: transparent;
 
   font-family: Caveat Brush;
@@ -72,11 +72,11 @@ ul {
 
   &:hover,
   &:focus {
-    color: #876655;
+    color: var(--button-hover-color);
   }
 
   &:active {
-    color: #674d40;
+    color: var(--button-clic-color);
   }
 }
 
@@ -87,7 +87,7 @@ ul {
   font-size: 24px;
   line-height: 2.7;
   text-align: center;
-  color: #2e2520;
+  color: var(--text-headers-color);
 
   @media screen and (min-width: 1280px) {
     font-size: 36px;
