@@ -821,6 +821,10 @@ body {
   }
 }
 
+.registration {
+  background-image: url("../images/registration/donut.png"), url("../images/registration/confetti.png");
+}
+
 @media screen and (max-width: 767px) {
   .registration__mobile-container {
     background-color: var(--registration-background-color);
@@ -857,7 +861,7 @@ body {
     -webkit-box-shadow: -4px -4px 4px var(--registration-form-color), 4px 4px 4px rgba(171, 129, 108, 0.15);
             box-shadow: -4px -4px 4px var(--registration-form-color), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px;
-    padding: 54px 21px 54px 35px;
+    padding: 54px 21px 35px 35px;
     width: 634px;
   }
 }
@@ -872,6 +876,10 @@ body {
     padding-left: 107px;
     width: 822px;
   }
+}
+
+.registration__text-list {
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -894,7 +902,28 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
     padding-right: 29px;
-    border-right: 1px solid var(--registration-form-color);
+    /* border-right: 1px solid var(--registration-form-color);*/
+  }
+}
+
+.registration__text-list::after {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__text-list::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    right: 0;
+    top: 76px;
+    left: 60px;
+    width: 190px;
+    height: 1px;
+    background-color: var(--registration-form-color);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 
