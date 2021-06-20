@@ -66,8 +66,15 @@
       height: 547px;
     }
   }
+}
 
-  &__text:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.read-more-button {
+  background-color: transparent;
+  border: transparent;
+  color: var(--menu-hover-color);
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 3.6;
 }
