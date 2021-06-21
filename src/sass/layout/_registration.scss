@@ -1,4 +1,45 @@
 .registration {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/registration/donut.png'),
+      url('../images/registration/confetti-tablet.png');
+    background-repeat: no-repeat;
+    background-size: 196px 201px, 191px 345px;
+    transform: rotate(69.49deg), rotate(-47.68deg);
+    background-position: 10% 26%, 90% 100%;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/registration/donut@2x.png'),
+      url('../images/registration/confetti-tablet@2x.png');
+    background-repeat: no-repeat;
+    background-size: 196px 201px, 191px 345px;
+    transform: rotate(69.49deg), rotate(-47.68deg);
+    background-position: 10% 26%, 90% 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/registration/donut.png'),
+      url('../images/registration/confetti.png');
+    background-repeat: no-repeat;
+    background-size: 196px 201px, 301px 544px;
+    transform: rotate(69.49deg), rotate(-47.68deg);
+    background-position: 19% 26%, 79% 100%;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) and (min-width: 1280px),
+    (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url('../images/registration/donut@2x.png'),
+      url('../images/registration/confetti@2x.png');
+    background-repeat: no-repeat;
+    background-size: 196px 201px, 301px 544px;
+    transform: rotate(69.49deg), rotate(-47.68deg);
+    background-position: 19% 26%, 79% 100%;
+  }
+
   &__mobile-container {
     @media screen and (max-width: 767px) {
       background-color: var(--registration-background-color);
@@ -25,7 +66,7 @@
       box-shadow: -4px -4px 4px var(--registration-form-color),
         4px 4px 4px rgba(171, 129, 108, 0.15);
       border-radius: 150px;
-      padding: 54px 21px 54px 35px;
+      padding: 54px 21px 35px 35px;
       width: 634px;
     }
 
@@ -41,6 +82,7 @@
   }
 
   &__text-list {
+    position: relative;
     @media screen and (max-width: 767px) {
       margin-bottom: 11px;
       border-bottom: 1px solid var(--registration-form-color);
@@ -50,8 +92,27 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding-right: 30px;
-      border-right: 1px solid var(--registration-form-color);
+      padding-right: 29px;
+      /* border-right: 1px solid var(--registration-form-color);*/
+    }
+
+    &::after {
+      display: none;
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        content: '';
+        display: block;
+
+        bottom: 0;
+        right: 0;
+        top: 76px;
+        left: 60px;
+        width: 190px;
+        height: 1px;
+
+        background-color: var(--registration-form-color);
+        transform: rotate(90deg);
+      }
     }
   }
 
