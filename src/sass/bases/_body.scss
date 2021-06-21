@@ -1,12 +1,11 @@
 body {
-  background: #ffff;
+  background: var(--primary-white-color);
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   font-style: normal;
-  line-height: 1.25;
-  color: #2e2520;
+  color: var(--text-headers-color);
 
   background-image: url(../images/background/pic-mob.png), url(../images/background/bottom-mob.png),
     url(../images/background/bg-mob.svg), url(../images/background/bg-bot-mob.svg);
@@ -14,6 +13,14 @@ body {
   background-size: auto, auto, 100%, 100%;
   background-position: left top, bottom right, top, 0% 90%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+  // @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  //   (min-resolution: 192dpi) and (max-width: 767px),
+  //   (min-resolution: 2dppx) and (max-width: 767px) {
+  //   background-image: url(../images/background/pic-mob@2x.png),
+  //     url(../images/background/bottom-mob2x.png), url(../images/background/bg-mob.svg),
+  //     url(../images/background/bg-bot-mob.svg);
+  // }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/pic-tabl.png),
@@ -25,6 +32,14 @@ body {
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   }
 
+  // @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  //   (min-resolution: 192dpi) and (min-width: 768px),
+  //   (min-resolution: 2dppx) and (min-width: 768px) {
+  //   background-image: url(../images/background/pic-tabl2x.png),
+  //     url(../images/background/bottom-tabl2x.png), url(../images/background/bg-tabl.svg),
+  //     url(../images/background/bg-bot-tabl.svg);
+  // }
+
   @media screen and (min-width: 1280px) {
     background-image: url(../images/background/pic-dec.png), url(../images/background/spoon-dec.png),
       url(../images/background/bottom-dec.png), url(../images/background/bg-dec.svg),
@@ -33,5 +48,15 @@ body {
     background-size: auto, auto, auto, 100%, 100%;
     background-position: right top, 0px 167px, bottom right, top, bottom;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+    font-size: 18px;
   }
+
+  // @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  //   (min-resolution: 192dpi) and (min-width: 1280px),
+  //   (min-resolution: 2dppx) and (min-width: 1280px) {
+  //   background-image: url(../images/background/pic-dec2x.png),
+  //     url(../images/background/spoon-dec2x.png), url(../images/background/bottom-dec2x.png),
+  //     url(../images/background/bg-dec.svg), url(../images/background/bg-bot-dec.svg);
+  // }
 }
