@@ -68,7 +68,7 @@ ul {
 
   font-family: Caveat Brush;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 
   &:hover,
   &:focus {
@@ -91,9 +91,49 @@ ul {
 
   @media screen and (min-width: 1280px) {
     font-size: 36px;
+    line-height: 1.8;
   }
 }
 
 hr {
   border: transparent;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 61px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social__icon {
+  width: 15px;
+  height: 15px;
+}
+.social__link:hover,
+.social__link:focus {
+  fill: var(--button-hover-color);
+}
+
+.social__link:active {
+  fill: var(--button-clic-color);
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .social {
+    max-width: 78px;
+    height: 19px;
+  }
+  .social__icon {
+    width: 19px;
+  }
 }
