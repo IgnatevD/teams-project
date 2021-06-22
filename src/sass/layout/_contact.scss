@@ -1,5 +1,4 @@
 .contact-title {
-  padding-top: 27px;
   @media screen and(min-width:1280px) {
     font-size: 36px;
   }
@@ -17,7 +16,7 @@
   line-height: 20px;
   color: var(--registration-form-color);
   margin-top: 2px;
-  width: 265px;
+  max-width: 265px;
   border-bottom: 1px solid #ab816c;
   position: relative;
   display: block;
