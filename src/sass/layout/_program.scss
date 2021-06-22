@@ -8,6 +8,7 @@
   }
   position: relative;
   margin-left: 20px;
+
   &::before {
     content: '';
     display: block;
@@ -19,6 +20,7 @@
     top: 2px;
   }
 }
+///
 
 .program__invitation {
   margin-top: 10px;
@@ -54,6 +56,23 @@
   &:nth-child(even) {
     transform: translateY(30px);
   }
+
+  // animation: mymove 5s infinite;
+
+  // @keyframes mymove {
+  //   0% {
+  //     top: 0px;
+  //   }
+  //   25% {
+  //     top: 75px;
+  //   }
+  //   75% {
+  //     top: 25px;
+  //   }
+  //   100% {
+  //     top: 0px;
+  //   }
+  // }
 }
 
 .program__information1 {
@@ -173,6 +192,25 @@
 
   .program__advertisement {
     padding-top: 43px;
+  }
+
+  .program__information {
+    animation: mymove 5s infinite;
+
+    @keyframes mymove {
+      0% {
+        top: 0px;
+      }
+      25% {
+        top: 75px;
+      }
+      75% {
+        top: 25px;
+      }
+      100% {
+        top: 0px;
+      }
+    }
   }
 }
 
