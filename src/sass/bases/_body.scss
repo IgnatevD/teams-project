@@ -10,17 +10,17 @@ body {
   background-image: url(../images/background/pic-mob.png), url(../images/background/bottom-mob.png),
     url(../images/background/bg-mob.svg), url(../images/background/bg-bot-mob.svg);
 
-  background-size: auto, auto, 100%, 100%;
+  background-size: 130px 165px, 113px 99px, 100%, 100%;
   background-position: left top, bottom right, top, 0% 90%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
-  // @media (min-device-pixel-ratio: 2) and (max-width: 767px),
-  //   (min-resolution: 192dpi) and (max-width: 767px),
-  //   (min-resolution: 2dppx) and (max-width: 767px) {
-  //   background-image: url(../images/background/pic-mob@2x.png),
-  //     url(../images/background/bottom-mob2x.png), url(../images/background/bg-mob.svg),
-  //     url(../images/background/bg-bot-mob.svg);
-  // }
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/background/pic-mob@2x.png),
+      url(../images/background/bottom-mob@2x.png), url(../images/background/bg-mob.svg),
+      url(../images/background/bg-bot-mob.svg);
+  }
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/background/pic-tabl.png),
