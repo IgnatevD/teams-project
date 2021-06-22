@@ -906,25 +906,6 @@ body {
 
 .registration {
   position: relative;
-  /*&__form-button-container {
-    @media screen and (min-width: 768px) {
-      display: flex;
-    }
-  }
-
-  &__button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
-      margin-left: 25px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-left: 38px;
-    }
-  }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -979,7 +960,7 @@ body {
     border-radius: 150px 150px 0px 0px;
     padding-top: 8px;
     padding-bottom: 41px;
-    width: 290px;
+    max-width: 290px;
     margin-left: auto;
     margin-right: auto;
   }
