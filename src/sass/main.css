@@ -593,6 +593,11 @@ body {
   }
 }
 
+.about-us__img {
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
 @media screen and (max-width: 767px) {
   .about-us__img {
     margin: auto;
@@ -610,6 +615,36 @@ body {
   .about-us__img {
     width: 512px;
     height: 547px;
+  }
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 75px;
+  }
+  75% {
+    top: 25px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 75px;
+  }
+  75% {
+    top: 25px;
+  }
+  100% {
+    top: 0px;
   }
 }
 
@@ -954,8 +989,12 @@ body {
   position: relative;
 }
 
+.registration::before {
+  content: '';
+}
+
 @media screen and (min-width: 768px) {
-  .registration {
+  .registration::before {
     background-image: url("../images/registration/donut.png"), url("../images/registration/confetti-tablet.png");
     background-repeat: no-repeat;
     background-size: 256px 256px, 191px 345px;
@@ -966,7 +1005,7 @@ body {
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
-  .registration {
+  .registration::before {
     background-image: url("../images/registration/donut@2x.png"), url("../images/registration/confetti-tablet@2x.png");
     background-repeat: no-repeat;
     background-size: 256px 256px, 180px 345px;
@@ -977,26 +1016,24 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  .registration {
+  .registration::before {
     background-image: url("../images/registration/donut.png"), url("../images/registration/confetti.png");
     background-repeat: no-repeat;
     background-size: 256px 256px, 301px 544px;
     -webkit-transform: rotate(69.49deg), rotate(-47.68deg);
             transform: rotate(69.49deg), rotate(-47.68deg);
-    background-position: left 188px top 0;
-    /*background-attachment: fixed;*/
+    background-position: left 70px top 0;
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1280px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), (min-resolution: 192dpi) and (min-width: 1280px), (min-resolution: 2dppx) and (min-width: 1280px) {
-  .registration {
+  .registration::before {
     background-image: url("../images/registration/donut@2x.png"), url("../images/registration/confetti@2x.png");
     background-repeat: no-repeat;
     background-size: 256px 256px, 301px 544px;
     -webkit-transform: rotate(69.49deg), rotate(-47.68deg);
             transform: rotate(69.49deg), rotate(-47.68deg);
-    background-position: left 188px top 0;
-    /*background-attachment: fixed;*/
+    background-position: left 70px top 0;
   }
 }
 
