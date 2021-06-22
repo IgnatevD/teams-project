@@ -43,6 +43,7 @@
     }*/
 
   &__mobile-container {
+    position: relative;
     @media screen and (max-width: 767px) {
       background-color: var(--registration-background-color);
       box-shadow: -4px -4px 4px var(--registration-form-color), 4px 4px 4px #ab816c26;
@@ -57,10 +58,10 @@
     &::before {
       @media screen and (min-width: 768px) {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: -100px;
+        top: 100px;
         z-index: -1;
-        content: url('../images/registration/confetti.png');
+        content: url('../images/registration/confetti-tablet.png');
         width: 400px;
         height: 400px;
       }
