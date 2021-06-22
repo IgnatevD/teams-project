@@ -73,6 +73,10 @@
       height: 547px;
     }
   }
+
+  &__text:nth-last-child(-n + 3) {
+    margin-top: 10px;
+  }
 }
 
 .read-more-button {
@@ -84,4 +88,8 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 3.6;
+}
+
+.is-hidden {
+  display: none;
 }
