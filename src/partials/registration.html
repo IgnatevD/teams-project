@@ -1,6 +1,6 @@
 <section class="section registration">
     <div class="registration__mobile-container">
-        <h2 class="title registration__title" id="registration">Registration</h2>
+        <h2 class="title registration__title">Registration</h2>
         <div class="container registration__container">
             <ul class="list registration__text-list">
                 <li class="registration__text">
@@ -13,32 +13,28 @@
                     $ 699
                 </li>
             </ul>
-            <div class="registration__form-button-container">
-                <div class="registration__form-container">
-                    <p class="registration__form-title">
-                        Apply your personal info for registration
-                    </p>
-                    <form class="registration-form">
-                        <label class="registration-form__field">
-                            <input class="registration-form__input" type="text" name="user-name" placeholder="Your name" autofocus
-                                required minlength="2">
-                        </label>
-                
-                        <label class="registration-form__field">
-                            <input class="registration-form__input" type="tel" name="tel" placeholder="Phone number" 
+            <div class="registration__form-container">
+                <p class="registration__form-title">
+                    Apply your personal info for registration
+                </p>
+                <form class="registration-form">
+                    <label class="registration-form__field">
+                        <input class="registration-form__input" type="text" name="user-name" placeholder="Your name" autofocus
+                            required minlength="2">
+                    </label>
+            
+                    <label class="registration-form__field">
+                        <input class="registration-form__input" type="tel" name="tel" placeholder="Phone number"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                        </label>
-                
-                        <label class="registration-form__field">
-                            <input class="registration-form__input" type="email" name="email" placeholder="Email" 
-                            pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" 
+                    </label>
+            
+                    <label class="registration-form__field">
+                        <input class="registration-form__input" type="email" name="email" placeholder="Email"
+                            pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/"
                             required>
-                        </label>
-                    </form>
-                </div>
-                <div class="registration__button-container">
-                    <button class="button registration__button" type="submit">Register</button>
-                </div>
+                    </label>
+                        <button class="button registration__button" type="submit">Register</button>
+                </form>
             </div>
         </div>
     </div>

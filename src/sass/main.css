@@ -588,8 +588,8 @@ body {
   }
 }
 
-.about-us__text:last-child {
-  margin-top: 8px;
+.about-us__text:nth-last-child(-n + 3) {
+  margin-top: 10px;
 }
 
 .read-more-button {
@@ -906,6 +906,25 @@ body {
 
 .registration {
   position: relative;
+  /*&__form-button-container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 25px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-left: 38px;
+    }
+  }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -967,6 +986,7 @@ body {
 }
 
 .registration__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -978,7 +998,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /*padding: 0;*/
   }
 }
 
@@ -1139,38 +1158,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .registration__form-button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.registration__button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .registration__button-container {
-    margin-left: 25px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .registration__button-container {
-    margin-left: 38px;
-  }
-}
-
 .registration__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,6 +1168,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__button {
+    position: absolute;
+    right: 21px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration__button {
+    position: absolute;
+    right: 98px;
+  }
 }
 
 .registration-form {

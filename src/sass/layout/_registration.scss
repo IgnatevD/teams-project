@@ -54,11 +54,11 @@
   }
 
   &__container {
+    position: relative;
     display: flex;
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
-      /*padding: 0;*/
     }
 
     @media screen and (min-width: 768px) {
@@ -178,7 +178,7 @@
     }
   }
 
-  &__form-button-container {
+  /*&__form-button-container {
     @media screen and (min-width: 768px) {
       display: flex;
     }
@@ -196,12 +196,23 @@
     @media screen and (min-width: 1280px) {
       margin-left: 38px;
     }
-  }
+  }*/
 
   &__button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      right: 21px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      right: 98px;
+    }
   }
 }
 
