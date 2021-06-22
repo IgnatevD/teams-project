@@ -43,6 +43,14 @@
   font-size: 16px;
   line-height: 20px;
 }
+.footer-list__social_item_link:hover,
+.footer-list__social_item_link:focus {
+  fill: var(--button-hover-color);
+}
+
+.footer-list__social_item_link:active {
+  fill: var(--button-clic-color);
+}
 
 .footer {
   margin-bottom: 19px;
