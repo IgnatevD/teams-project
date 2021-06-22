@@ -1028,26 +1028,6 @@ body {
     }*/
 }
 
-@media screen and (min-width: 1280px) {
-  .registration::before {
-    position: absolute;
-    z-index: 3;
-    content: '';
-    width: 256px;
-    height: 256px;
-    background-image: url("../images/registration/donut.png"), url("../images/registration/confetti.png");
-    background-repeat: no-repeat;
-    background-size: 256px 256px, 301px 544px;
-    -webkit-transform: rotate(69.49deg), rotate(-47.68deg);
-            transform: rotate(69.49deg), rotate(-47.68deg);
-    background-position: left 70px top 0;
-  }
-}
-
-.registration__mobile-container {
-  position: relative;
-}
-
 @media screen and (max-width: 767px) {
   .registration__mobile-container {
     background-color: var(--registration-background-color);
@@ -1098,6 +1078,30 @@ body {
     padding-right: 98px;
     padding-left: 107px;
     width: 822px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration__container::before {
+    position: absolute;
+    left: -88px;
+    top: -55px;
+    z-index: -1;
+    content: url("../images/registration/donut.png");
+    width: 256px;
+    height: 256px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration__container::before {
+    position: absolute;
+    left: -165px;
+    top: -50px;
+    z-index: -1;
+    content: url("../images/registration/donut.png"), url("../images/registration/confetti.png");
+    width: 256px, 600px;
+    height: 256px, 600px;
   }
 }
 
@@ -1286,9 +1290,15 @@ body {
   cursor: pointer;
   border: transparent;
   border-bottom: 1px solid #ab816c;
-  width: 265px;
+  width: 256px;
   outline: none;
   background: transparent;
+}
+
+@media screen and (max-width: 319px) {
+  .registration-form__input {
+    max-width: 256px;
+  }
 }
 
 @media screen and (min-width: 768px) {
