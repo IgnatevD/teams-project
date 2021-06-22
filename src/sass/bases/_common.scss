@@ -48,7 +48,6 @@ ul {
   &:hover,
   &:focus {
     background-color: var(--button-hover-color);
-    animation: none;
   }
 
   &:active {
@@ -87,7 +86,7 @@ ul {
   cursor: pointer;
   color: var(--button-stars-color);
   background-color: transparent;
-  animation: blur 1.15s ease-out infinite;
+  // animation: bounce-top 1.5s infinite both;
 
   font-family: Caveat Brush;
   font-size: 18px;
@@ -104,12 +103,63 @@ ul {
   }
 }
 
-@keyframes blur {
-  from {
-    text-shadow: 0px 0px 4px rgba(182, 2, 14, 0.2), 0px 0px 8px rgba(182, 2, 14, 0.4),
-      0px 0px 12px rgba(182, 2, 14, 0.3);
+.button-more:after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 30px;
+  background: var(--primary-white-color);
+  position: absolute;
+  left: -50px;
+  top: -80px;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: all 0.4s;
+  animation-name: slideme;
+  animation-duration: 4s;
+  animation-delay: 0.01s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 30%;
+    margin-left: 0px;
+  }
+  60% {
+    left: 50%;
+    margin-left: 0px;
+  }
+  100% {
+    left: 60%;
+    margin-left: 0px;
   }
 }
+
+// @keyframes bounce-top {
+//   0% {
+//     opacity: 1;
+//   }
+
+//   35% {
+//     opacity: 0.8;
+//   }
+//   50% {
+//     opacity: 0.7;
+//   }
+//   60% {
+//     opacity: 0.8;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 .title {
   font-family: Caveat Brush;
