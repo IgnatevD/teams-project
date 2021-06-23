@@ -1,6 +1,9 @@
 .program__desc {
   margin-bottom: 10px;
 }
+.program__left-part {
+  margin-bottom: 34px;
+}
 
 .program__item {
   &:not(:last-child) {
@@ -34,7 +37,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-bottom: 51px;
 }
 
 .program__information {
@@ -117,16 +121,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-  margin-bottom: 39px;
 }
-
-// .program__inform-title {
-//   font-family: 'Caveat Brush';
-//   font-size: 18px;
-//   line-height: 23px;
-//   text-align: center;
-//   margin-bottom: 12px;
-// }
 
 .program__inform-desc {
   font-size: 14px;
@@ -221,7 +216,6 @@
 
   .program__left-part {
     font-size: 18px;
-    margin-bottom: 34px;
   }
 
   .button-more {
