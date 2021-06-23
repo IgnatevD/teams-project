@@ -299,6 +299,7 @@ body {
     background-position: right top, 0px 167px, bottom right, top, bottom;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     font-size: 18px;
+    background-color: #fffff9;
   }
 }
 
@@ -382,6 +383,12 @@ body {
   border: 0;
   margin: 0;
   overflow: visible;
+}
+
+@media screen and (min-width: 1280px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .hamburger:hover {
@@ -852,6 +859,10 @@ body {
 
 .is-hidden {
   display: none;
+}
+
+.program_container {
+  margin-bottom: 68px;
 }
 
 .program__desc {
@@ -1710,7 +1721,6 @@ body {
   line-height: 20px;
   color: var(--registration-form-color);
   margin-top: 2px;
-  max-width: 265px;
   border-bottom: 1px solid #ab816c;
   position: relative;
   display: block;
@@ -1718,7 +1728,13 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .contact__list_item {
+    max-width: 265px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contact__list_item {
     width: 410px;
   }
