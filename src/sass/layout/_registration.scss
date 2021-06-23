@@ -147,7 +147,6 @@
       flex-direction: column;
       align-items: flex-end;
       padding-right: 29px;
-      /* border-right: 1px solid var(--registration-form-color);*/
     }
 
     &::after {
@@ -201,6 +200,10 @@
 
   &__title {
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__form-container {
