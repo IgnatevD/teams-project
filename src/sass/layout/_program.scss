@@ -1,7 +1,3 @@
-.program_container {
-  margin-bottom: 68px;
-}
-
 .program__desc {
   margin-bottom: 10px;
 }
@@ -204,6 +200,10 @@
   .program__right-part,
   .program__left-part {
     flex-basis: calc((100% - 40px) / 2);
+  }
+
+  .program_container {
+    margin-bottom: 68px;
   }
 
   .program__desc {
