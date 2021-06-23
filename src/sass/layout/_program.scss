@@ -1,6 +1,9 @@
 .program__desc {
   margin-bottom: 10px;
 }
+.program__left-part {
+  margin-bottom: 34px;
+}
 
 .program__item {
   &:not(:last-child) {
@@ -29,16 +32,13 @@
   display: none;
 }
 
-.button-more {
-  margin-bottom: 34px;
-}
-
 .program__advertisement {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin-bottom: 51px;
 }
 
 .program__information {
@@ -46,14 +46,20 @@
   padding-top: 48px;
   display: flex;
   flex-direction: column;
-  max-width: 142px;
-  max-height: 142px;
   border-radius: 50%;
   background-color: #fef3e4;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-  @media screen and(min-width:320px) {
+  @media screen and(max-width:319px) {
+    max-width: 142px;
+    max-height: 142px;
+  }
+  @media screen and(min-width:320px) and (max-width: 1279px) {
     width: 142px;
     height: 142px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 180px;
+    height: 180px;
   }
   &:nth-child(even) {
     transform: translateY(30px);
@@ -115,16 +121,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-  margin-bottom: 39px;
 }
-
-// .program__inform-title {
-//   font-family: 'Caveat Brush';
-//   font-size: 18px;
-//   line-height: 23px;
-//   text-align: center;
-//   margin-bottom: 12px;
-// }
 
 .program__inform-desc {
   font-size: 14px;
