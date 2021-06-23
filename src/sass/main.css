@@ -1345,7 +1345,6 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
     padding-right: 29px;
-    /* border-right: 1px solid var(--registration-form-color);*/
   }
 }
 
@@ -1407,6 +1406,12 @@ body {
 
 .registration__title {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__title {
+    margin-bottom: 10px;
+  }
 }
 
 .registration__form-container {
