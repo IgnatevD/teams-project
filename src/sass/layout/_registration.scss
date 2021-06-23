@@ -107,8 +107,8 @@
     &::after {
       @media screen and (min-width: 768px) {
         position: absolute;
-        right: -100px;
-        top: 100px;
+        right: -187px;
+        top: 18px;
         z-index: -1;
         content: url('../images/registration/confetti-tablet.png');
         width: 400px;
@@ -117,8 +117,8 @@
 
       @media screen and (min-width: 1280px) {
         position: absolute;
-        right: 120px;
-        top: 18px;
+        right: -230px;
+        top: -45px;
         z-index: -1;
         content: url('../images/registration/confetti.png');
         width: 600px;
