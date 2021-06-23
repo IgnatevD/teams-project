@@ -1,7 +1,6 @@
 .registration {
   position: relative;
   margin-bottom: 77px;
-  overflow: hidden;
 
   &__mobile-container {
     @media screen and (max-width: 767px) {
@@ -92,11 +91,11 @@
     &::after {
       @media screen and (min-width: 768px) {
         position: absolute;
-        right: -187px;
+        right: -66px;
         top: 18px;
         z-index: -1;
         content: url('../images/registration/confetti-tablet.png');
-        width: 400px;
+        width: 296px;
         height: 400px;
       }
 
@@ -209,6 +208,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 256px;
 
     @media screen and (min-width: 768px) {
       align-items: flex-start;

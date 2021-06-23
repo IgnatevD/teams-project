@@ -1207,7 +1207,6 @@ body {
 .registration {
   position: relative;
   margin-bottom: 77px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
@@ -1290,11 +1289,11 @@ body {
 @media screen and (min-width: 768px) {
   .registration__container::after {
     position: absolute;
-    right: -187px;
+    right: -66px;
     top: 18px;
     z-index: -1;
     content: url("../images/registration/confetti-tablet.png");
-    width: 400px;
+    width: 296px;
     height: 400px;
   }
 }
@@ -1413,6 +1412,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 256px;
 }
 
 @media screen and (min-width: 768px) {
