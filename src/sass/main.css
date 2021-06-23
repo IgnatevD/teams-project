@@ -299,6 +299,7 @@ body {
     background-position: right top, 0px 167px, bottom right, top, bottom;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     font-size: 18px;
+    background-color: #fffff9;
   }
 }
 
@@ -744,16 +745,6 @@ body {
 
 @media screen and (min-width: 1280px) {
   .about-us__text-container {
-    display: none;
-  }
-}
-
-.about-us__text-container-desktop {
-  display: none;
-}
-
-@media screen and (min-width: 1280px) {
-  .about-us__text-container-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -845,19 +836,10 @@ body {
   margin-top: 10px;
 }
 
-.read-more-button {
-  background-color: transparent;
-  border: transparent;
-  color: var(--menu-hover-color);
-  font-family: Caveat Brush;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 3.6;
-}
-
-.is-hidden {
-  display: none;
+@media screen and (max-width: 1279px) {
+  .is-hidden {
+    display: none;
+  }
 }
 
 .program_container {
@@ -1550,14 +1532,13 @@ body {
   text-align: center;
 }
 
-.review__box {
-  width: 626px;
-  margin: auto;
-}
-
 .review__title {
   display: inline-block;
-  margin-bottom: 10px;
+  line-height: 2.1;
+}
+
+.review__box {
+  margin: auto;
 }
 
 .review__circle {
@@ -1567,28 +1548,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.review__circle.slick-center {
-  height: 311px;
-  width: 234px;
-  margin-bottom: 22px;
-}
-
-.review__circle.slick-center .review__img {
-  margin-top: 20px;
-  width: 234px;
-  height: 234px;
-  margin-bottom: 6px;
+  width: 136px;
+  height: 187px;
 }
 
 .review__img {
   display: block;
-  width: 136px;
-  height: 136px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
+  margin-bottom: 6px;
+  -webkit-transition: width 0.25s, height 0.25s;
+  transition: width 0.25s, height 0.25s;
 }
 
 .review__stars {
@@ -1613,20 +1586,18 @@ body {
   text-align: center;
   font-style: italic;
   font-weight: 500;
-  font-size: 16px;
-}
-
-.review__desc {
-  padding: 0 100px;
+  font-size: 14px;
 }
 
 .review__text {
-  height: 132px;
   text-align: center;
-  margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 1.22;
-  padding: 0 100px;
+  margin-bottom: 31px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.desc__box {
+  margin: auto;
 }
 
 .review__number {
@@ -1656,50 +1627,69 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .review_container {
-    max-width: 654px;
-    padding: 67px;
-  }
-  .review__title {
-    margin-bottom: 0px;
-    line-height: 0;
-  }
   .review__box {
-    padding: 0;
+    width: 558px;
+    margin: auto;
   }
-  .review__text {
-    padding: 0;
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 1.25;
+  .review__circle {
+    width: 186px;
+    height: 276px;
   }
   .review__img {
-    display: block;
     width: 110px;
     height: 110px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: auto;
-    margin-bottom: 6px;
-  }
-  .review__name {
-    font-size: 14px;
   }
   .review__circle.slick-center {
-    height: 263px;
     width: 186px;
   }
   .review__circle.slick-center .review__img {
     margin-top: 20px;
     width: 186px;
     height: 186px;
-    margin-bottom: 6px;
+  }
+  .review__text {
+    margin-bottom: 35px;
   }
 }
 
-.review__number {
-  font-size: 16px;
+@media screen and (min-width: 1200px) {
+  .review__box {
+    width: 762px;
+    margin: auto;
+  }
+  .review__circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 136px;
+    height: 330px;
+  }
+  .review__img {
+    width: 136px;
+    height: 136px;
+  }
+  .review__circle.slick-center .review__img {
+    margin-top: 20px;
+    width: 234px;
+    height: 234px;
+  }
+  .review__name {
+    font-size: 16px;
+  }
+  .desc__box {
+    width: 626px;
+  }
+  .review__text {
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .review__number {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
