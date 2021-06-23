@@ -43,7 +43,6 @@
     }*/
 
   &__mobile-container {
-    position: relative;
     @media screen and (max-width: 767px) {
       background-color: var(--registration-background-color);
       box-shadow: -4px -4px 4px var(--registration-form-color), 4px 4px 4px #ab816c26;
@@ -53,28 +52,6 @@
       max-width: 290px;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    &::before {
-      @media screen and (min-width: 768px) {
-        position: absolute;
-        right: -100px;
-        top: 100px;
-        z-index: -1;
-        content: url('../images/registration/confetti-tablet.png');
-        width: 400px;
-        height: 400px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        position: absolute;
-        right: 120px;
-        top: 18px;
-        z-index: -1;
-        content: url('../images/registration/confetti.png');
-        width: 600px;
-        height: 600px;
-      }
     }
   }
 
@@ -124,6 +101,28 @@
         content: url('../images/registration/donut.png');
         width: 256px;
         height: 256px;
+      }
+    }
+
+    &::after {
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        right: -100px;
+        top: 100px;
+        z-index: -1;
+        content: url('../images/registration/confetti-tablet.png');
+        width: 400px;
+        height: 400px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        position: absolute;
+        right: 120px;
+        top: 18px;
+        z-index: -1;
+        content: url('../images/registration/confetti.png');
+        width: 600px;
+        height: 600px;
       }
     }
   }
