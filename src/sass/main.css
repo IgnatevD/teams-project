@@ -384,6 +384,12 @@ body {
   overflow: visible;
 }
 
+@media screen and (min-width: 1280px) {
+  .hamburger {
+    display: none;
+  }
+}
+
 .hamburger:hover {
   opacity: 0.7;
 }
@@ -852,6 +858,10 @@ body {
 
 .is-hidden {
   display: none;
+}
+
+.program_container {
+  margin-bottom: 68px;
 }
 
 .program__desc {
@@ -1334,7 +1344,6 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
     padding-right: 29px;
-    /* border-right: 1px solid var(--registration-form-color);*/
   }
 }
 
@@ -1396,6 +1405,12 @@ body {
 
 .registration__title {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .registration__title {
+    margin-bottom: 10px;
+  }
 }
 
 .registration__form-container {
@@ -1710,7 +1725,6 @@ body {
   line-height: 20px;
   color: var(--registration-form-color);
   margin-top: 2px;
-  max-width: 265px;
   border-bottom: 1px solid #ab816c;
   position: relative;
   display: block;
@@ -1718,7 +1732,13 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .contact__list_item {
+    max-width: 265px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contact__list_item {
     width: 410px;
   }
