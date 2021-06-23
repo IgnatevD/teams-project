@@ -30,13 +30,6 @@
       width: 336px;
     }
     @media screen and (min-width: 1280px) {
-      display: none;
-    }
-  }
-
-  &__text-container-desktop {
-    display: none;
-    @media screen and (min-width: 1280px) {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -95,17 +88,8 @@
   }
 }
 
-.read-more-button {
-  background-color: transparent;
-  border: transparent;
-  color: var(--menu-hover-color);
-  font-family: Caveat Brush;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 3.6;
-}
-
 .is-hidden {
-  display: none;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }

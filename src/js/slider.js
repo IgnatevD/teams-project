@@ -12,9 +12,11 @@ $(document).ready(function(){
     slidesToScroll: 1,
     asNavFor: '.desc__box',
     dots: false,
-    arrows: true,
+    arrows: false,
     centerMode: true,
     centerPadding: '0px',
+    autoplay:true,
+  autoplaySpeed:1500,
     focusOnSelect: true,
     responsive: [
      
