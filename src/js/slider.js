@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.desc__box').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     fade: true,
     asNavFor: '.review__box'
   });
@@ -12,14 +12,15 @@ $(document).ready(function(){
     slidesToScroll: 1,
     asNavFor: '.desc__box',
     dots: false,
+    arrows: true,
     centerMode: true,
     centerPadding: '0px',
     focusOnSelect: true,
     responsive: [
      
       {
-        breakpoint: 321,
-        settings: {
+        breakpoint: 767,
+          settings: {
           arrows: false,
           centerMode: true,
           centerPadding: '0px',
