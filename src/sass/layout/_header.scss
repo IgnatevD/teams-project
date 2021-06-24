@@ -179,7 +179,9 @@
       font-size: 18px;
       line-height: 1.22;
       color: var(--text-headers-color);
-      @include transition;
+
+      transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
 
     &__nav-link:focus,

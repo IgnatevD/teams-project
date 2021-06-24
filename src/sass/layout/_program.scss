@@ -38,7 +38,7 @@
   justify-content: space-between;
   align-items: flex-start;
   // margin: 0 auto;
-  margin-bottom: 51px;
+  padding-bottom: 51px;
 }
 
 .program__information {
@@ -77,6 +77,12 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+
+    background-size: 76px 84px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program/mob-program1@2x.png);
+    }
   }
   margin-bottom: 56px;
 }
@@ -92,6 +98,12 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+
+    background-size: 67px 73px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program/mob-program3@2x.png);
+    }
   }
 }
 
@@ -106,6 +118,11 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    background-size: 70px 77px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program/mob-program2@2x.png);
+    }
   }
 }
 
@@ -120,6 +137,11 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    background-size: 67px 73px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/program/mob-program4@2x.png);
+    }
   }
 }
 
@@ -286,6 +308,11 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
+      background-size: 97px 107px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/program/desk-program1@2x.png);
+      }
     }
     margin-bottom: 61px;
   }
@@ -301,6 +328,11 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
+      background-size: 83px 92px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/program/desk-program3@2x.png);
+      }
     }
   }
 
@@ -315,6 +347,11 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
+      background-size: 88px 97px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/program/desk-program2@2x.png);
+      }
     }
   }
 
@@ -329,6 +366,12 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
+
+      background-size: 83px 92px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/program/desk-program4@2x.png);
+      }
     }
   }
 }
