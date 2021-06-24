@@ -44,6 +44,8 @@
   line-height: 20px;
 }
 .footer-list__social_item_link {
+  @include transition(fill);
+
   &:hover,
   &:focus {
     fill: var(--button-hover-color);
@@ -60,6 +62,8 @@
   }
 }
 .footer-contact__item_link {
+  @include transition(fill);
+
   &:hover,
   &:focus {
     fill: var(--button-hover-color);

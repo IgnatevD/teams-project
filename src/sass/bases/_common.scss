@@ -43,6 +43,7 @@ ul {
   text-align: center;
   text-decoration: none;
   color: var(--primary-white-color);
+  @include transition(background-color);
 
   &:hover,
   &:focus {
@@ -91,6 +92,7 @@ ul {
   font-family: Caveat Brush;
   font-size: 18px;
   text-align: left;
+  @include transition;
 
   &:hover,
   &:focus {
@@ -163,6 +165,10 @@ hr {
   width: 15px;
   height: 15px;
 }
+.social__link {
+  @include transition(fill);
+}
+
 .social__link:hover,
 .social__link:focus {
   fill: var(--button-hover-color);
