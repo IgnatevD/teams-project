@@ -90,7 +90,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .review__box {
     width: 558px;
     margin: auto;
@@ -100,49 +99,48 @@
     width: 186px;
     height: 276px;
   }
-  
+
   .review__img {
     width: 110px;
     height: 110px;
-   
   }
 
   .review__circle.slick-center {
     width: 186px;
-  
+
     .review__img {
       margin-top: 20px;
       width: 186px;
       height: 186px;
-      transition: width 1000ms cubic-bezier(0.4, 0, 0.2, 1), height 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: width 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+        height 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
   .review__text {
-      margin-bottom: 35px;
-      height: 120px;
-    }
+    margin-bottom: 35px;
+    height: 120px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  
+@media screen and (min-width: 1280px) {
   .review__box {
-    width: 762px;
+    width: 702px;
     margin: auto;
   }
-  
+
   .review__circle {
     display: flex;
     align-items: center;
     width: 136px;
     height: 330px;
   }
-  
+
   .review__img {
     width: 136px;
     height: 136px;
   }
-  
+
   .review__circle.slick-center {
     .review__img {
       margin-top: 20px;
@@ -150,26 +148,22 @@
       height: 234px;
     }
   }
-  
+
   .review__name {
     font-size: 16px;
   }
-  
+
   .desc__box {
     width: 626px;
   }
-  
+
   .review__text {
     font-size: 18px;
     line-height: 1.22;
     height: 132px;
   }
-  
+
   .review__number {
     font-size: 16px;
   }
 }
-
-
-  
-
