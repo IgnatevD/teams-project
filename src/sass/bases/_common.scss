@@ -152,7 +152,7 @@ hr {
   border: transparent;
 }
 
-.social {
+.networcs {
   display: flex;
   justify-content: space-between;
   max-width: 61px;
@@ -161,36 +161,36 @@ hr {
   margin-right: auto;
 }
 
-.social__icon {
+.networcs__icon {
   width: 15px;
   height: 15px;
 }
-.social__link {
+.networcs__link {
   @include transition(fill);
 }
 
-.social__link:hover,
-.social__link:focus {
+.networcs__link:hover,
+.networcs__link:focus {
   fill: var(--button-hover-color);
 }
 
-.social__link:active {
+.networcs__link:active {
   fill: var(--button-clic-color);
 }
 
 @media screen and (min-width: 768px) {
-  .social {
+  .networcs {
     margin-left: 0;
     margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .social {
+  .networcs {
     max-width: 78px;
     height: 19px;
   }
-  .social__icon {
+  .networcs__icon {
     width: 19px;
   }
 }
