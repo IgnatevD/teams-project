@@ -54,7 +54,7 @@
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
-  transition-duration: 0.15s;
+  transition-duration: 0.35s;
   transition-timing-function: linear;
   font: inherit;
   color: #2e2520;
@@ -181,6 +181,7 @@
       color: var(--text-headers-color);
 
       transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
 
     &__nav-link:focus,

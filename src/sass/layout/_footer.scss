@@ -44,6 +44,8 @@
   line-height: 20px;
 }
 .footer-list__social_item_link {
+  @include transition(fill);
+
   &:hover,
   &:focus {
     fill: var(--button-hover-color);
@@ -54,12 +56,14 @@
   }
 }
 .footer {
-  margin-bottom: 19px;
+  padding-bottom: 19px;
   @media screen and(min-width:768px) {
-    margin-bottom: 21px;
+    padding-bottom: 21px;
   }
 }
 .footer-contact__item_link {
+  @include transition(fill);
+
   &:hover,
   &:focus {
     fill: var(--button-hover-color);
