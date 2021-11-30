@@ -1,16 +1,16 @@
 {
-  "name": "parcel-project-template",
+  "name": "parcel-cakes",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://IgnatevD/.github.io/teams-project",
+  "homepage": "https://IgnatevD/.github.io/cakes",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /teams-project/"
+    "build": "parcel build src/*.html --public-url /cakes/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/goitacademy/parcel-cakes.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
