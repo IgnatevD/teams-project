@@ -39,17 +39,17 @@ ul {
   cursor: pointer;
   background: var(--button-stars-color);
   border-radius: 25px;
-  color: white;
   animation: animate_pulse 1.5s infinite;
 
+  font-family: Caveat Brush;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
+  color: var(--primary-white-color);
   @include transition(background-color);
 
   &:hover,
   &:focus {
-    color: var(--primary-black-color);
     background-color: var(--button-hover-color);
   }
 
